@@ -21,3 +21,8 @@ Route::get('/', function () {
     ];
     return view('travel', ['destinations' => $destinations]);
 });
+
+
+Route::get('/plan-trip', function () {
+    return view('plan-trip');
+});
