@@ -102,7 +102,7 @@
         <div>
             <h2>Discover Sri Lanka</h2>
             <p>Explore paradise beaches, ancient ruins, and vibrant culture.</p>
-            <a href="#" class="btn">Plan Your Trip</a>
+            <a href="/plan-trip" class="btn">Plan Your Trip</a>
         </div>
     </section>
 
