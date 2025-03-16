@@ -61,6 +61,12 @@
         .form-container button:hover {
             background-color: #e65b50;
         }
+
+   .success {
+            color: #1a3c34;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -71,11 +77,19 @@
     <div class="content">
         <h2>Plan Your Trip</h2>
         <p>Tell us your preferences, and we’ll help you craft the perfect Sri Lankan adventure!</p>
+        
+        @if (session('success'))
+            <div class="success">{{ session('success') }}</div>
+        @endif
+
         <div class="form-container">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Travel Preferences (e.g., beaches, wildlife, culture)" rows="4"></textarea>
-            <button>Submit</button>
+            <form action="{{ route('trip.store') }}" method="POST">
+                @csrf
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="preferences" placeholder="Your Travel Preferences (e.g., beaches, wildlife, culture)" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
 </body>
