@@ -23,15 +23,16 @@
         }
         /* Hero Section */
         .hero {
-            background: url('https://images.unsplash.com/photo-1579273154292-37a411defe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
         }
         .hero h2 {
             font-size: 3em;
